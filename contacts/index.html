@@ -5,43 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacts</title>
   <style>
-    .contacts {
-      min-height: 100vh;
+    body {
+      margin: 0;
+      padding: 0;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #7EC850, #A3DA82, #B9EBA5);
+      font-family: Arial, sans-serif;
+    }
+
+    .contacts {
+      text-align: center;
+      color: #fff;
+      max-width: 600px;
+      padding: 20px;
     }
 
     .contacts h1 {
       margin-top: 45px;
-      font-size: 65px;
+      font-size: 48px;
       font-weight: 600;
     }
 
     .contacts p {
-      font-size: 30px;
+      font-size: 24px;
+      color: #000;
+      word-wrap: break-word;
     }
 
     .contacts a {
       color: #5e9918;
+      text-decoration: none;
     }
 
     .contacts__links {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-top: 75px;
+      margin-top: 40px;
       width: 100%;
-      background: #fff;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      padding: 20px;
     }
 
     @media (max-width: 770px) {
       .contacts h1 {
-        font-size: 38px;
+        font-size: 36px;
       }
 
       .contacts p {
-        font-size: 23px;
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .contacts h1 {
+        font-size: 28px;
+      }
+
+      .contacts p {
+        font-size: 18px;
+      }
+
+      .contacts__links p {
+        word-wrap: break-word;
       }
     }
   </style>
@@ -50,7 +80,7 @@
   <div class="contacts">
     <h1>Got any questions?</h1>
     <div class="contacts__links">
-      <p>Drop us a letter at <a href="mailto:support@rhythmerr.com">support@rhythmerr.com</a></p>
+      <p>Drop us a letter at <br/><a href="mailto:support@rhythmerr.com">support@rhythmerr.com</a></p>
     </div>
   </div>
 </body>
